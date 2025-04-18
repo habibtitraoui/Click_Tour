@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<!-- Boxicons -->
+		<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+		<!-- My CSS -->
+		<link rel="stylesheet" href="style.css">
+		 <!-- 
+		- favicon
+	  -->
+	  <link rel="shortcut icon" href="../assets/images/Logo.png" type="">
+	
+	
+		<title>Agency Profile</title>
+	
+	</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-user'></i>
+			<span class="text">Click Tour</span>
+		</a>
+		<ul class="side-menu top">
+			<li >
+				<a href="index.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="myoffer.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">My offers</span>
+				</a>
+			</li>
+			<li>
+				<a href="myreservation.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">My Reservation</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Message</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Team</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="setting.html">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="../home.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link"></a>
+			<form action="#">
+				<!-- <div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div> -->
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="img/people.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Add Offer</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+            <div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3 id="Reservation">Add Offer</h3>
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<form enctype="multipart/form-data">
+						<label for="Offer Type">Offer Type:</label><br>
+						<input list="type_offer" type="text" id="type" name="type" required>
+						<datalist id="type_offer">
+							<option value="Trip"></option>
+							<option value="Flight"></option>
+							<option value="Visa"></option>
+						</datalist><br><br>
+						<label for="title">Title:</label><br>
+						<input type="text" id="title" name="title" required><br><br>
+					
+						<label for="description">Description:</label><br>
+						<textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+					
+						<label for="location">Destination:</label><br>
+						<input list="locations" type="text" id="location" name="location" required>
+						<datalist id="locations">
+							<!-- Wilayas of Algeria -->
+							<option value="Adrar">
+							<option value="Chlef">
+							<option value="Laghouat">
+							<option value="Oum El Bouaghi">
+							<option value="Batna">
+							<option value="Béjaïa">
+							<option value="Biskra">
+							<option value="Béchar">
+							<option value="Blida">
+							<option value="Bouira">
+							<option value="Tamanrasset">
+							<option value="Tébessa">
+							<option value="Tlemcen">
+							<option value="Tiaret">
+							<option value="Tizi Ouzou">
+							<option value="Alger">
+							<option value="Djelfa">
+							<option value="Jijel">
+							<option value="Sétif">
+							<option value="Saïda">
+							<option value="Skikda">
+							<option value="Sidi Bel Abbès">
+							<option value="Annaba">
+							<option value="Guelma">
+							<option value="Constantine">
+							<option value="Médéa">
+							<option value="Mostaganem">
+							<option value="M'Sila">
+							<option value="Mascara">
+							<option value="Ouargla">
+							<option value="Oran">
+							<option value="El Bayadh">
+							<option value="Illizi">
+							<option value="Bordj Bou Arréridj">
+							<option value="Boumerdès">
+							<option value="El Tarf">
+							<option value="Tindouf">
+							<option value="Tissemsilt">
+							<option value="El Oued">
+							<option value="Khenchela">
+							<option value="Souk Ahras">
+							<option value="Tipaza">
+							<option value="Mila">
+							<option value="Aïn Defla">
+							<option value="Naâma">
+							<option value="Aïn Témouchent">
+							<option value="Ghardaïa">
+							<option value="Relizane">
+							<option value="El M'Ghair">
+							<option value="El Menia">
+							<option value="Ouled Djellal">
+							<option value="Bordj Baji Mokhtar">
+							<option value="Beni Abbes">
+							<option value="In Salah">
+							<option value="In Guezzam">
+						  
+							<!-- List of all countries -->
+							<option value="Afghanistan">
+							<option value="Albania">
+							<option value="Algeria">
+							<option value="Andorra">
+							<option value="Angola">
+							<option value="Antigua and Barbuda">
+							<option value="Argentina">
+							<option value="Armenia">
+							<option value="Australia">
+							<option value="Austria">
+							<option value="Azerbaijan">
+							<option value="Bahamas">
+							<option value="Bahrain">
+							<option value="Bangladesh">
+							<option value="Barbados">
+							<option value="Belarus">
+							<option value="Belgium">
+							<option value="Belize">
+							<option value="Benin">
+							<option value="Bhutan">
+							<option value="Bolivia">
+							<option value="Bosnia and Herzegovina">
+							<option value="Botswana">
+							<option value="Brazil">
+							<option value="Brunei">
+							<option value="Bulgaria">
+							<option value="Burkina Faso">
+							<option value="Burundi">
+							<option value="Cabo Verde">
+							<option value="Cambodia">
+							<option value="Cameroon">
+							<option value="Canada">
+							<option value="Central African Republic">
+							<option value="Chad">
+							<option value="Chile">
+							<option value="China">
+							<option value="Colombia">
+							<option value="Comoros">
+							<option value="Congo">
+							<option value="Costa Rica">
+							<option value="Croatia">
+							<option value="Cuba">
+							<option value="Cyprus">
+							<option value="Czech Republic">
+							<option value="Denmark">
+							<option value="Djibouti">
+							<option value="Dominica">
+							<option value="Dominican Republic">
+							<option value="Ecuador">
+							<option value="Egypt">
+							<option value="El Salvador">
+							<option value="Equatorial Guinea">
+							<option value="Eritrea">
+							<option value="Estonia">
+							<option value="Eswatini">
+							<option value="Ethiopia">
+							<option value="Fiji">
+							<option value="Finland">
+							<option value="France">
+							<option value="Gabon">
+							<option value="Gambia">
+							<option value="Georgia">
+							<option value="Germany">
+							<option value="Ghana">
+							<option value="Greece">
+							<option value="Grenada">
+							<option value="Guatemala">
+							<option value="Guinea">
+							<option value="Guinea-Bissau">
+							<option value="Guyana">
+							<option value="Haiti">
+							<option value="Honduras">
+							<option value="Hungary">
+							<option value="Iceland">
+							<option value="India">
+							<option value="Indonesia">
+							<option value="Iran">
+							<option value="Iraq">
+							<option value="Ireland">
+							<option value="Israel">
+							<option value="Italy">
+							<option value="Jamaica">
+							<option value="Japan">
+							<option value="Jordan">
+							<option value="Kazakhstan">
+							<option value="Kenya">
+							<option value="Kiribati">
+							<option value="Kuwait">
+							<option value="Kyrgyzstan">
+							<option value="Laos">
+							<option value="Latvia">
+							<option value="Lebanon">
+							<option value="Lesotho">
+							<option value="Liberia">
+							<option value="Libya">
+							<option value="Liechtenstein">
+							<option value="Lithuania">
+							<option value="Luxembourg">
+							<option value="Madagascar">
+							<option value="Malawi">
+							<option value="Malaysia">
+							<option value="Maldives">
+							<option value="Mali">
+							<option value="Malta">
+							<option value="Marshall Islands">
+							<option value="Mauritania">
+							<option value="Mauritius">
+							<option value="Mexico">
+							<option value="Micronesia">
+							<option value="Moldova">
+							<option value="Monaco">
+							<option value="Mongolia">
+							<option value="Montenegro">
+							<option value="Morocco">
+							<option value="Mozambique">
+							<option value="Myanmar">
+							<option value="Namibia">
+							<option value="Nauru">
+							<option value="Nepal">
+							<option value="Netherlands">
+							<option value="New Zealand">
+							<option value="Nicaragua">
+							<option value="Niger">
+							<option value="Nigeria">
+							<option value="North Korea">
+							<option value="North Macedonia">
+							<option value="Norway">
+							<option value="Oman">
+							<option value="Pakistan">
+							<option value="Palau">
+							<option value="Palestine">
+							<option value="Panama">
+							<option value="Papua New Guinea">
+							<option value="Paraguay">
+							<option value="Peru">
+							<option value="Philippines">
+							<option value="Poland">
+							<option value="Portugal">
+							<option value="Qatar">
+							<option value="Romania">
+							<option value="Russia">
+							<option value="Rwanda">
+							<option value="Saint Kitts and Nevis">
+							<option value="Saint Lucia">
+							<option value="Saint Vincent and the Grenadines">
+							<option value="Samoa">
+							<option value="San Marino">
+							<option value="Sao Tome and Principe">
+							<option value="Saudi Arabia">
+							<option value="Senegal">
+							<option value="Serbia">
+							<option value="Seychelles">
+							<option value="Sierra Leone">
+							<option value="Singapore">
+							<option value="Slovakia">
+							<option value="Slovenia">
+							<option value="Solomon Islands">
+							<option value="Somalia">
+							<option value="South Africa">
+							<option value="South Korea">
+							<option value="South Sudan">
+							<option value="Spain">
+							<option value="Sri Lanka">
+							<option value="Sudan">
+							<option value="Suriname">
+							<option value="Sweden">
+							<option value="Switzerland">
+							<option value="Syria">
+							<option value="Taiwan">
+							<option value="Tajikistan">
+							<option value="Tanzania">
+							<option value="Thailand">
+							<option value="Timor-Leste">
+							<option value="Togo">
+							<option value="Tonga">
+							<option value="Trinidad and Tobago">
+							<option value="Tunisia">
+							<option value="Turkey">
+							<option value="Turkmenistan">
+							<option value="Tuvalu">
+							<option value="Uganda">
+							<option value="Ukraine">
+							<option value="United Arab Emirates">
+							<option value="United Kingdom">
+							<option value="United States">
+							<option value="Uruguay">
+							<option value="Uzbekistan">
+							<option value="Vanuatu">
+							<option value="Vatican City">
+							<option value="Venezuela">
+							<option value="Vietnam">
+							<option value="Yemen">
+							<option value="Zambia">
+							<option value="Zimbabwe">
+						  
+						  </datalist><br><br>
+					
+						<label for="price">Price:</label><br>
+						<input type="number" id="price" name="price" required><br><br>
+					
+						<label for="images">Images:</label><br>
+    <input type="file" id="images" name="images" accept="image/*" multiple onchange="loadFiles(event)" required><br><br>
+    <div id="image-preview"></div><br><br>
+
+    <script>
+        var loadFiles = function(event) {
+            var output = document.getElementById('image-preview');
+            output.innerHTML = ''; // Clear previous previews
+
+            Array.from(event.target.files).forEach(file => {
+                var image = document.createElement('img');
+                image.src = URL.createObjectURL(file);
+                image.style.width = '100px'; // Set width for preview image
+                image.style.margin = '5px'; // Add some margin for better layout
+                output.appendChild(image);
+
+                image.onload = function() {
+                    URL.revokeObjectURL(image.src); // Free memory
+                }
+            });
+        };
+    </script>
+					
+						<button id="open-popup">Add Offer</button>
+					
+						
+					</form>
+					
+                </div>
+            </div>
+        </main>
+    </section>
+	<div class="popup">
+		<div class="head">
+			<div class="icon">
+				<div class="box">
+					<i class="fa fa-check"></i>
+				</div>
+			</div>
+		</div>
+		<div class="body">
+			<h1>Success</h1>
+			<p>The Offer Added Successfully</p>
+			<button class="close-btn">&times; Close</button>
+		</div>
+	</div>
+    <script src="script.js"></script>
+	<script>
+		document.querySelector("#open-popup").addEventListener("click", function() {
+    document.querySelector(".popup").classList.add("active");
+});
+
+document.querySelector(".popup .close-btn").addEventListener("click", function() {
+    document.querySelector(".popup").classList.remove("active");
+});
+
+
+	</script>
+</body>
+</html>
